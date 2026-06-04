@@ -1,0 +1,189 @@
+DECODELABS OUTPUTS:
+==================================================
+TASK 1: DATASET UNDERSTANDING
+==================================================
+Dataset Shape:
+(10194, 21)
+
+Columns:
+Index(['Row ID', 'Order ID', 'Order Date', 'Ship Date', 'Ship Mode',
+       'Customer ID', 'Customer Name', 'Segment', 'Country/Region', 'City',
+       'State/Province', 'Postal Code', 'Region', 'Product ID', 'Category',
+       'Sub-Category', 'Product Name', 'Sales', 'Quantity', 'Discount',
+       'Profit'],
+      dtype='str')
+
+Data Types:
+Row ID              int64
+Order ID              str
+Order Date            str
+Ship Date             str
+Ship Mode             str
+Customer ID           str
+Customer Name         str
+Segment               str
+Country/Region        str
+City                  str
+State/Province        str
+Postal Code           str
+Region                str
+Product ID            str
+Category              str
+Sub-Category          str
+Product Name          str
+Sales             float64
+Quantity            int64
+Discount          float64
+Profit            float64
+dtype: object
+
+Dataset Information:
+<class 'pandas.DataFrame'>
+RangeIndex: 10194 entries, 0 to 10193
+Data columns (total 21 columns):
+ #   Column          Non-Null Count  Dtype  
+---  ------          --------------  -----  
+ 0   Row ID          10194 non-null  int64  
+ 1   Order ID        10194 non-null  str    
+ 2   Order Date      10194 non-null  str    
+ 3   Ship Date       10194 non-null  str    
+ 4   Ship Mode       10194 non-null  str    
+ 5   Customer ID     10194 non-null  str    
+ 6   Customer Name   10194 non-null  str    
+ 7   Segment         10194 non-null  str    
+ 8   Country/Region  10194 non-null  str    
+ 9   City            10194 non-null  str    
+ 10  State/Province  10194 non-null  str    
+ 11  Postal Code     10194 non-null  str    
+ 12  Region          10194 non-null  str    
+ 13  Product ID      10194 non-null  str    
+ 14  Category        10194 non-null  str    
+ 15  Sub-Category    10194 non-null  str    
+ 16  Product Name    10194 non-null  str    
+ 17  Sales           10194 non-null  float64
+ 18  Quantity        10194 non-null  int64  
+ 19  Discount        10194 non-null  float64
+ 20  Profit          10194 non-null  float64
+dtypes: float64(3), int64(2), str(16)
+memory usage: 1.6 MB
+
+Missing Values:
+Row ID            0
+Order ID          0
+Order Date        0
+Ship Date         0
+Ship Mode         0
+Customer ID       0
+Customer Name     0
+Segment           0
+Country/Region    0
+City              0
+State/Province    0
+Postal Code       0
+Region            0
+Product ID        0
+Category          0
+Sub-Category      0
+Product Name      0
+Sales             0
+Quantity          0
+Discount          0
+Profit            0
+dtype: int64
+
+==================================================
+TASK 2 : DATA CLEANING & PREPROCESSING
+==================================================
+Before Cleaning: (10194, 21)
+
+Missing Values:
+Row ID            0
+Order ID          0
+Order Date        0
+Ship Date         0
+Ship Mode         0
+Customer ID       0
+Customer Name     0
+Segment           0
+Country/Region    0
+City              0
+State/Province    0
+Postal Code       0
+Region            0
+Product ID        0
+Category          0
+Sub-Category      0
+Product Name      0
+Sales             0
+Quantity          0
+Discount          0
+Profit            0
+dtype: int64
+
+Duplicate Rows:
+0
+
+After Cleaning: (10194, 21)
+
+Missing Values After Cleaning:
+Row ID            0
+Order ID          0
+Order Date        0
+Ship Date         0
+Ship Mode         0
+Customer ID       0
+Customer Name     0
+Segment           0
+Country/Region    0
+City              0
+State/Province    0
+Postal Code       0
+Region            0
+Product ID        0
+Category          0
+Sub-Category      0
+Product Name      0
+Sales             0
+Quantity          0
+Discount          0
+Profit            0
+dtype: int64
+
+Dataset Cleaned Successfully!
+
+==================================================
+TASK 3 : EXPLORATORY DATA ANALYSIS (EDA)
+==================================================
+Total Sales: 2326534.3543
+Average Sales: 228.22585386501862
+Total Profit: 292296.8146
+Average Profit: 28.673417166960956
+
+Sales by Region:
+Region
+Central    503170.6728
+East       691828.1680
+South      391721.9050
+West       739813.6085
+Name: Sales, dtype: float64
+
+Profit by Category:
+Category
+Furniture           19729.9956
+Office Supplies    126023.4434
+Technology         146543.3756
+Name: Profit, dtype: float64
+
+Top 10 Products by Sales:
+Product Name
+Canon imageCLASS 2200 Advanced Copier                                          61599.824
+Fellowes PB500 Electric Punch Plastic Comb Binding Machine with Manual Bind    27453.384
+Cisco TelePresence System EX90 Videoconferencing Unit                          22638.480
+HON 5400 Series Task Chairs for Big and Tall                                   21870.576
+GBC DocuBind TL300 Electric Binding System                                     19823.479
+GBC Ibimaster 500 Manual ProClick Binding System                               19024.500
+Hewlett Packard LaserJet 3310 Copier                                           18839.686
+HP Designjet T520 Inkjet Large Format Printer - 24" Color                      18374.895
+GBC DocuBind P400 Electric Binding System                                      17965.068
+High Speed Automatic Electric Letter Opener                                    17030.312
+Name: Sales, dtype: float64
